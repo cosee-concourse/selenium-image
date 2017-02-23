@@ -12,7 +12,7 @@ If you want to use Selenium Standalone, feel free to use [cosee-concourse/dind-i
 This image is hosted at quay.io: [quay.io/cosee-concourse/selenium](https://quay.io/cosee-concourse/selenium)
 ## Example: Usage with ConcourseCI
 ### Selenium WebDriver
-Job definition:
+Task definition:
 ``` yaml
 platform: linux
 
@@ -70,12 +70,12 @@ jobs:
     trigger: true
   - task: runSeleniumTest
     privileged: true        # required
-    file: source/path_to_job_definition/jobDefinition.yml
+    file: source/path_to_task_definition/taskDefinition.yml
     
 ... 
 ```
 
-Job definition:
+Task definition:
 ``` yaml
 platform: linux
 
